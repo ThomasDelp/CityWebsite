@@ -1,10 +1,14 @@
 {
   "name": "tests3d",
   "version": "1.0.0",
+  "homepage": "https://thomasdelp.github.io/CityWebsite/",
   "description": "",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "predeploy" : "npm run build",
+    "deploy" : "gh-pages -d dist",
+    "dev": "vite",
+    "build": "vite build"
   },
   "author": "",
   "license": "ISC",
@@ -12,6 +16,7 @@
     "three": "^0.166.1"
   },
   "devDependencies": {
+    "gh-pages": "^6.1.1",
     "vite": "^5.3.4"
   }
 }
