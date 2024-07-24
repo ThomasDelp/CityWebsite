@@ -1,0 +1,126 @@
+html {
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+canvas {
+    width: 100vw !important;
+    height: 100vh !important;
+}
+
+nav {
+    position: relative;
+    height: 70%;
+    width: 100%;
+    font-weight: bold;
+    transition: 0.5s;
+    background-color:transparent ;
+}
+
+nav ul{
+    margin: 0;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    list-style-type: none;
+}
+
+nav ul *:hover{
+    cursor: pointer;
+}
+
+a {
+    text-decoration: none;
+    color: white;
+    padding: 1rem;
+    transition: 0.2s;
+}
+
+a:hover{
+    opacity: 0.7;
+}
+
+#bar-scrolling-container{
+    position: fixed;
+    height: 100vh;
+    right: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-right: 1rem;
+    z-index: 2;
+}
+
+#bar-scrolling{
+    height: 70%;
+    width: 1rem;
+    background-color: black;
+    overflow: visible;
+}
+
+#bar-scrolling-button{
+    height: 2rem;
+    width: 2rem;
+    margin-left: -0.5rem;
+    background-color: red;
+    position : absolute;
+}
+
+#bar-scrolling-button:hover{
+    cursor: pointer;
+}
+
+section{
+    height: 100vh;
+    width: 100vw;
+    display: flex;
+    flex-direction: column;
+    transition: 0.3s;
+    position: fixed;
+    align-items: center;
+    justify-content: center;
+    opacity: 0.5;
+    transform:perspective(500px);
+    color: white;
+}
+
+.section-home{
+    background-color: transparent;
+}
+
+.section-1{
+    background-color: transparent;
+}
+
+.section-2{
+    background-color: transparent;
+}
+.section-3{
+    background-color: transparent;
+}
+
+
+
+
+.section-grid{
+    display: flex;
+    width: 350px;
+    height: 250px;
+}
+
+
+.section-grid div{
+    background-color: white;
+    opacity: 1 !important;
+    width: 150px;
+    height: 100px;
+    flex: 1;
+    margin: 0 1rem 0 1rem;
+    border-radius: 4px;
+}
+
+.section-grid div:hover{
+    transform: scale(1.1);
+    cursor: pointer;
+    transition: 0.25s;
+}

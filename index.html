@@ -1,61 +1,76 @@
 <!DOCTYPE html>
-<html>
-    <head>
-        <title>Psychologue Abbeville</title>
-        <link rel="stylesheet" href="css/styles.css">
-    </head>
-<body>
-    <script src="js/index.js"></script>
-    <section id="home" class="section-home">
-            <h1>
-                Bonjour
-            </h1>
-    </section>
-    <section id="section-1" class="section-1">
-        <h1>
-            Section1
-        </h1>
-    </section>
-    <section id="section-2" class="section-2">
-        <h1>
-            Section2
-        </h1>
-    </section>
-    <section id="section-3" class="section-3">
-        <h1>
-            Section3
-        </h1>
-    </section>
-    <div id="bar-scrolling-container">
+<html lang="en">
+	<head>
+		<meta charset="utf-8">
+		<title>CityWebsite</title>
+		<link rel="stylesheet" href="css/style.css">
+
+		<style>
+			body { margin: 0; }
+		</style>
+	</head>
+	<body>
+		<script type="module" src="/main.js"></script>
+	</body>
+	<section id="section-home" class="section-home">
+		<h1>
+			Bonjour
+		</h1>
+	</section>
+	<section id="section-1" class="section-1">
+		<h1>
+			Section1
+		</h1>
+		<div class="section-grid">
+			<div></div>
+			<div></div>
+			<div></div>
+			<div></div>
+		</div>
+	</section>
+	<section id="section-2" class="section-2">
+		<h1>
+			Section2
+		</h1>
+		<div class="section-grid">
+			<div></div>
+			<div></div>
+			<div></div>
+			<div></div>
+		</div>
+	</section>
+	<section id="section-3" class="section-3">
+		<h1>
+			Section3
+		</h1>
+	</section>
+	<div id="bar-scrolling-container">
         <nav id="navbar">
             <ul>
                 <li>
-                    <a id="section-home">
-                        Qui Suis-je ?
+                    <a id="link-section-home">
+                        Home
                     </a>
                 </li>
                 <li>
-                    <a id="section-1">
+                    <a id="link-section-1">
                         Section1
                     </a>
                 </li>
                 <li>
-                    <a id="section-2">
+                    <a id="link-section-2">
                         Section2
                     </a>
                 </li>
                 <li>
-                    <a id="section-3">
+                    <a id="link-section-3">
                         Section3
                     </a>
                 </li>
             </ul>
         </nav>
         <div id="bar-scrolling">
-            <div id="bar-scrolling-button"></div>
+            <button id="bar-scrolling-button"></button>
         </div>
-        
     </div>
-    <div id="back-scrolling"></div>
-</body>
 </html>
